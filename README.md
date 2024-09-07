@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # SWP391
  Koi Show Management System
 >>>>>>> 379ca64 (Initial commit)
+=======
+# SWP391
+ Koi Show Management System
+>>>>>>> 379ca64be3707f1ff82f0c5c6a67818f5f166e1a
