@@ -1,6 +1,8 @@
-import FindPet from "../../components/findpets/FindPet";
-import Header from "../../components/header/Header";
-import Slider from "../../components/slider/Slider";
+import Featurepets from "../../components/HomeComponents/featurepets/Featurepets";
+import FindPet from "../../components/HomeComponents/findpets/FindPet";
+import Header from "../../components/HomeComponents/header/Header";
+import Slider from "../../components/HomeComponents/slider/Slider";
+import Support from "../../components/HomeComponents/support/Support";
 
 const Home = () => {
   return (
@@ -8,6 +10,8 @@ const Home = () => {
       <Header />
       <Slider />
       <FindPet />
+      <Support />
+      <Featurepets/>
     </div>
   );
 };

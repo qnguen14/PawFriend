@@ -1,8 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import Logo from "../../assets/images/logoPawFriend 1.png";
+import Logo from "../../../assets/images/logoPawFriend 1.png";
 
 export default function Header() {
   return (
@@ -21,7 +19,7 @@ export default function Header() {
         <ul>
           <li>About</li>
           <li>
-            <FontAwesomeIcon icon={faUser} /> Login/Register
+            <i className="fa fa-user"></i> Login/Register
           </li>
         </ul>
       </nav>
