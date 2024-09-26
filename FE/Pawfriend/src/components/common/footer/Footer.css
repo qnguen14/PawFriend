@@ -1,0 +1,64 @@
+.footer {
+  background-color: #87bebf;
+  padding: 15px 30px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 170px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+.footer-about,
+.footer-contact,
+.footer-follow {
+  width: 25%;
+}
+
+.footer-contact {
+  padding-left: 60px;
+  margin-left: 40px;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-follow a {
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+}
+
+.footer-about p {
+  padding-right: 5cap;
+}
+
+.footer-follow a {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.footer-follow a:hover {
+  color: #404040;
+}
+
+.footer-copyright p {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 12px;
+  color: white;
+}

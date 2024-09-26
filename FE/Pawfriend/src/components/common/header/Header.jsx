@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./Header.css";
 import Logo from "../../../assets/images/logoPawFriend 1.png";
+import LoginPopup from '../login/LoginPopup';
 
 export default function Header() {
+  const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
+
+  const openLoginPopup = () => {
+    setIsLoginPopupOpen(true);
+  };
+
+  const closeLoginPopup = () => {
+    setIsLoginPopupOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="logo">
@@ -18,11 +29,12 @@ export default function Header() {
         </ul>
         <ul>
           <li>About</li>
-          <li>
+          <li onClick={openLoginPopup}>
             <i className="fa fa-user"></i> Login/Register
           </li>
         </ul>
       </nav>
+      <LoginPopup isOpen={isLoginPopupOpen} onClose={closeLoginPopup} />
     </header>
   );
 }
