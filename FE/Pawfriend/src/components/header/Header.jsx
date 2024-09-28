@@ -3,8 +3,8 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/images/logoPawFriend 1.png";
-
-export default function Header() {
+//import { Link } from "react-router-dom"
+export default function Header({ onLoginClick }) {
   return (
     <header className="header">
       <div className="logo">
@@ -20,7 +20,7 @@ export default function Header() {
         </ul>
         <ul>
           <li>About</li>
-          <li>
+          <li onClick={onLoginClick}>
             <FontAwesomeIcon icon={faUser} /> Login/Register
           </li>
         </ul>
