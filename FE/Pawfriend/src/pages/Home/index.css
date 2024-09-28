@@ -1,0 +1,5 @@
+.header-content {
+  position: sticky; /* Thiết lập vị trí sticky */
+  top: 0; /* Đặt phần tử ở trên cùng khi cuộn */
+  z-index: 1000; /* Đảm bảo Header không bị che khuất bởi các phần tử khác */
+}
