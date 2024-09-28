@@ -1,6 +1,4 @@
-
 import React, { useState } from 'react';
-
 import Featurepets from "../../components/features/HomeComponents/featurepets/Featurepets";
 import FindPet from "../../components/features/HomeComponents/findpets/FindPet";
 import Footer from "../../components/common/footer/Footer";
@@ -9,6 +7,7 @@ import Popularpets from "../../components/features/HomeComponents/popularpets/Po
 import Slider from "../../components/features/HomeComponents/slider/Slider";
 import Support from "../../components/features/HomeComponents/support/Support";
 import "./index.css";
+import Login from '../../components/login/Login';
 
 
 const Home = () => {

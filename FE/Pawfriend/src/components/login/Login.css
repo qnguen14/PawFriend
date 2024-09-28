@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1200;
 }
 
 .login-modal {
@@ -44,15 +45,16 @@
 }
 
 .login-tabs button.active {
-  border-bottom: 2px solid #87BEBF;
-  color: #87BEBF;
+  border-bottom: 2px solid #87bebf;
+  color: #87bebf;
 }
 
 .modal-content {
   display: flex;
 }
 
-.login-form, .register-form {
+.login-form,
+.register-form {
   flex: 1;
   padding: 30px;
 }
@@ -111,7 +113,7 @@
 .submit-button {
   width: 100%;
   padding: 10px;
-  background-color: #87BEBF;
+  background-color: #87bebf;
   color: black;
   border: none;
   border-radius: 5px;
@@ -139,7 +141,7 @@
   height: 300px;
   flex: none;
   border-radius: 15px;
-  background-color: #87BEBF;
+  background-color: #87bebf;
   overflow: hidden;
   position: relative;
 }
@@ -183,12 +185,12 @@
 }
 
 .terms-checkbox input:checked {
-  background-color: #87BEBF; /* Color when checked */
-  border-color: #87BEBF;
+  background-color: #87bebf; /* Color when checked */
+  border-color: #87bebf;
 }
 
 .terms-checkbox input:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -204,17 +206,19 @@
 }
 
 .terms-link {
-  color: #87BEBF;
+  color: #87bebf;
   text-decoration: underline;
   cursor: pointer;
 }
 
-.login-form a, .register-form a {
-  color: #87BEBF;
+.login-form a,
+.register-form a {
+  color: #87bebf;
   text-decoration: none;
 }
 
-.login-form a:hover, .register-form a:hover {
+.login-form a:hover,
+.register-form a:hover {
   text-decoration: underline;
 }
 
@@ -223,7 +227,8 @@
 }
 
 @media (max-width: 768px) {
-  .login-modal, .register-modal {
+  .login-modal,
+  .register-modal {
     width: 90%;
   }
 
