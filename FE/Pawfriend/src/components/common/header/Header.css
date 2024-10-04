@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #a8d3d3;
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+nav li {
+  padding: 10px 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.link{
+  text-decoration:none;
+  color: #fff;
+}

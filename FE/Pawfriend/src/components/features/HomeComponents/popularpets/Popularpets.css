@@ -1,0 +1,86 @@
+/* Container chung */
+.container-popular {
+  padding: 15px 0px;
+  margin: auto;
+}
+
+.container-popular-title h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  color: #404040;
+}
+
+.container-popular-title p {
+  text-align: center;
+  font-size: 100;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Card styles */
+.card-small,
+.card-large {
+  width: 30%;
+  padding: 5px 10px;
+  border-radius: 15px;
+  overflow: hidden; /* Đảm bảo các phần tử bên trong không tràn ra ngoài */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng khi hover */
+}
+
+.card-large {
+  width: 60%;
+}
+
+.card-small:hover,
+.card-large:hover {
+  transform: translateY(-10px); /* Di chuyển nhẹ card khi hover */
+}
+
+.card-popular-info {
+  text-align: center;
+  color: rgb(121, 116, 116);
+  font-size: small;
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-popular-info p {
+  text-align: center;
+}
+
+.card-popular-img-container {
+  width: auto;
+  height: 250px;
+  background-color: #f2f2f2;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+
+.card-popular-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-small:hover img,
+.card-large:hover img {
+  transform: scale(1.1);
+}
+
+.card-small:hover .card-popular-info,
+.card-large:hover .card-popular-info {
+  background-color: #add8e6;
+  color: #fff;
+}
