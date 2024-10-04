@@ -22,3 +22,8 @@ nav li {
   cursor: pointer;
   color: #fff;
 }
+
+.link{
+  text-decoration:none;
+  color: #fff;
+}

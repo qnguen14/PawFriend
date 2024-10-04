@@ -1,29 +1,42 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import "./Header.css";
 import Logo from "../../../assets/images/logoPawFriend 1.png";
-import { useNavigate } from 'react-router-dom';
 
-export default function Header({onLoginClick}) {
+export default function Header({ onLoginClick }) {
   const navigate = useNavigate();
 
   const handleNavigation = (path) => {
     navigate(path);
   };
+
   return (
     <header className="header">
       <div className="logo">
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="Logo" />
       </div>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>List a Pet</li>
-          <li  onClick={() => handleNavigation('/pets')}>Pets</li>
-          <li>Volunteer</li>
-          <li>Donate</li>
+          <li>
+            <Link to="/" className="link">Home</Link>
+          </li>
+          <li>
+            <Link to="/list-a-pet" className="link">List a Pet</Link>
+          </li>
+          <li>
+            <Link to="/pets" className="link">Pets</Link>
+          </li>
+          <li>
+            <Link to="/volunteer" className="link">Volunteer</Link>
+          </li>
+          <li>
+            <Link to="/donate" className="link">Donate</Link>
+          </li>
         </ul>
         <ul>
-          <li>About</li>
+          <li>
+            <Link to="/about" className="link">About</Link>
+          </li>
           <li onClick={onLoginClick}>
             <i className="fa fa-user"></i> Login/Register
           </li>

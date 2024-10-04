@@ -5,7 +5,7 @@ export default function Support() {
   return (
     <div className="card-info">
       <div className="card">
-        <div class="card-img"></div>
+        <div className="card-img"></div>
         <h2>Support</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
@@ -15,7 +15,7 @@ export default function Support() {
         </p>
       </div>
       <div className="card">
-        <div class="card-img"></div>
+        <div className="card-img"></div>
         <h2>Volunteer</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
@@ -25,7 +25,7 @@ export default function Support() {
         </p>
       </div>
       <div className="card">
-        <div class="card-img"></div>
+        <div className="card-img"></div>
         <h2>Adopt</h2>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
