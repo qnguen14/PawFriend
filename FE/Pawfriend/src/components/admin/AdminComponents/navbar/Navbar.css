@@ -1,0 +1,83 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* Light background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left .navbar-logo {
+  height: 40px; /* Smaller logo */
+  margin-right: 20px; /* Space between logo and links */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav li {
+  padding: 10px 5px 0px 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #6b6969; /* Default link color */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change to your desired hover color */
+  background-color: #f8f9fa; /* Light background on hover */
+}
+
+.nav-link.active {
+  color: #007bff !important; /* Active link color */
+  font-weight: bold;
+  border-bottom: 5px solid #007bff; /* Underline effect for active link */
+  border-radius: 0 0 5px 5px; /* Add rounded corners to the bottom */
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-icon {
+    margin: 10px; /* Adjust icon spacing */
+  }
+}
