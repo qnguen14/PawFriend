@@ -1,11 +1,10 @@
 package fu.se.PawFund.controller;
 
 import fu.se.PawFund.dto.request.LoginRequest;
-import fu.se.PawFund.dto.request.UserCreationRequest;
 import fu.se.PawFund.entity.User;
+import fu.se.PawFund.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import fu.se.PawFund.service.UserService;
 
 import java.util.List;
 
@@ -15,32 +14,43 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    // Thêm người dùng mới
+    // API đăng nhập
+    @PostMapping("/login")
+    public String login(@RequestBody LoginRequest loginRequest) {
+            boolean isAuthenticated = userService.login(loginRequest);  // Truyền LoginRequest
+        if (isAuthenticated) {
+            return "Login successful!";
+        } else {
+            return "Invalid credentials!";
+        }
+    }
+
+    // API thêm người dùng mới
     @PostMapping
     public User addUser(@RequestBody User user) {
         return userService.addUser(user);
     }
 
-    // Lấy danh sách tất cả người dùng
+    // API lấy danh sách tất cả người dùng
     @GetMapping
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
 
-    // Lấy người dùng theo ID
+    // API lấy người dùng theo ID
     @GetMapping("/{id}")
     public User getUserById(@PathVariable int id) {
         return userService.getUserById(id);
     }
 
-    // Cập nhật người dùng
+    // API cập nhật người dùng
     @PutMapping("/{id}")
     public User updateUser(@PathVariable int id, @RequestBody User user) {
         user.setUserID(id);
         return userService.updateUser(user);
     }
 
-    // Xóa người dùng
+    // API xóa người dùng
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable int id) {
         userService.deleteUser(id);
