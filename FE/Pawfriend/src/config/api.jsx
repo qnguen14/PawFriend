@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // Tạo một instance của axios với cấu hình mặc định
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL || 'https://api.example.com', // Thay thế bằng URL API của bạn
-  timeout: 1000, // Thời gian chờ tối đa cho mỗi request
+  baseURL: 'https://670a18acaf1a3998baa30805.mockapi.io', // Đặt trực tiếp URL API của bạn
+  timeout: 5000, // Thời gian chờ tối đa cho mỗi request
   headers: { 'Content-Type': 'application/json' }
 });
 

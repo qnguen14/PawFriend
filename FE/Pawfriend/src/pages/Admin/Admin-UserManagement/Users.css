@@ -1,0 +1,299 @@
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.banner-content {
+  max-width: 60%;
+}
+
+.banner-content .badge {
+  background-color: #4f46e5;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.banner-content h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.banner-content h2 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.banner-content p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.banner-content span {
+  color: #999;
+}
+
+.banner-image {
+  max-width: 35%;
+  border-radius: 8px;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.form-control {
+  max-width: 300px;
+}
+
+.btn-primary {
+  background-color: #4f46e5;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+#add-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.user-management {
+  margin-top: 20px;
+}
+
+.user-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  overflow-x: auto;
+  table-layout: fixed;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: center; /* Center-align table content */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-table th {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.btn-warning,
+.btn-danger {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+}
+
+.btn-warning:hover {
+  background-color: #d97706;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .banner-image {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .form-control {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .user-management {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #add-user {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-warning,
+  .btn-danger {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .user-table {
+    font-size: 14px;
+    display: block;
+    table-layout: fixed;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Additional Responsive Design for smaller screens */
+@media (max-width: 480px) {
+  .banner-content h1, .banner-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .banner-content p, .banner-content span {
+    font-size: 0.8rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .user-table th, .user-table td {
+    padding: 8px;
+  }
+
+  .page-link {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
