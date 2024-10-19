@@ -1,0 +1,88 @@
+.application-page {
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    margin: 20px 0; /* Khoảng cách cho tiêu đề */
+    color: #636AE8;
+}
+
+.search-area {
+    margin-bottom: 20px; /* Thêm khoảng cách cho phần tìm kiếm */
+    display: flex;
+    justify-content: flex-start; /* Đặt tìm kiếm ở bên trái */
+}
+
+.search-input-container {
+    position: relative; /* Để định vị icon */
+    display: flex;
+    align-items: center; /* Canh giữa icon và ô nhập */
+}
+
+.search-input {
+    padding: 10px 30px; /* Thêm padding bên phải để tạo không gian cho icon */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px; /* Kích thước ô tìm kiếm */
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; /* Đặt vị trí icon trong ô nhập */
+    color: #636AE8; /* Màu cho icon */
+    font-size: 18px; /* Kích thước icon */
+}
+
+.applications-table {
+    width: 100%; /* Đảm bảo bảng chiếm hết chiều rộng */
+    border-collapse: collapse; /* Xóa khoảng cách giữa các ô */
+    margin-bottom: 20px; /* Khoảng cách dưới bảng */
+}
+
+.applications-table th,
+.applications-table td {
+    border: 1px solid #ccc; /* Thêm viền cho bảng */
+    padding: 10px; /* Padding cho ô */
+    text-align: left; /* Căn trái cho nội dung */
+}
+
+.applications-table th {
+    background-color: #636AE8; /* Màu nền cho tiêu đề bảng */
+    color: white; /* Màu chữ cho tiêu đề bảng */
+}
+
+.view-btn {
+    background-color: #F2F2FD; /* Màu nền cho nút view */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #636AE8; /* Màu chữ cho nút view */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút hành động */
+}
+
+.approve-btn,
+.reject-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+.approve-btn {
+    background-color: #28a745; /* Màu xanh cho nút approve */
+    color: white;
+}
+
+.reject-btn {
+    background-color: #dc3545; /* Màu đỏ cho nút reject */
+    color: white;
+}

@@ -1,0 +1,115 @@
+.event-management {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Add Event Form */
+  .add-event-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .add-event-form h2 {
+    text-align: left;
+    color: #636AE8;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 80px;
+  }
+  
+  .add-btn {
+    background-color: #636AE8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .add-btn:hover {
+    background-color: #4f56c7;
+  }
+  
+  /* Event List */
+  .event-list {
+    margin-top: 20px;
+  }
+  
+  .event-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .event-list th, .event-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .event-list th {
+    background-color: #636AE8;
+    color: white;
+  }
+  
+  .event-list td {
+    background-color: #f9f9f9;
+  }
+  
+  .event-list .edit-btn, .event-list .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event-list .edit-btn {
+    background-color: #4caf50;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .event-list .edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .event-list .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .event-list .delete-btn:hover {
+    background-color: #e41d1d;
+  }

@@ -1,0 +1,97 @@
+/* Donations.css */
+
+.donations-management {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #636AE8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Donation Summary */
+.donation-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.summary-item {
+    background-color: #f0f0f5;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item h3 {
+    margin-bottom: 10px;
+    color: #636AE8;
+}
+
+.summary-item p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Donations List */
+.donations-list {
+    margin-top: 20px;
+}
+
+.donations-list h2{
+    color:#636AE8;
+}
+
+.donations-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.donations-list th, .donations-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.donations-list th {
+    background-color: #636AE8;
+    color: white;
+}
+
+.donations-list td {
+    background-color: #f9f9f9;
+}
+
+.donations-list .view-btn, .donations-list .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donations-list .view-btn {
+    background-color: #4caf50;
+    color: white;
+    margin-right: 5px;
+}
+
+.donations-list .view-btn:hover {
+    background-color: #45a049;
+}
+
+.donations-list .delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.donations-list .delete-btn:hover {
+    background-color: #e41d1d;
+}

@@ -1,0 +1,15 @@
+.shelter-dashboard {
+    display: flex;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    margin-left: 180px; /* Đảm bảo nội dung không chồng lên sidebar */
+    margin-top: 68px; /* Khoảng trống phía trên cho navbar */
+  }
+  
+  .content-area {
+    padding: 10px 20px; /* Điều chỉnh padding để phù hợp */
+    margin-top: 30px;
+    margin-left:30px;
+  }

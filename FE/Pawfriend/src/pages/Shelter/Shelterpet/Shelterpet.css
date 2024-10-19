@@ -1,0 +1,117 @@
+.pet-page {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #636AE8;
+}
+
+/* Điều chỉnh form để các input nằm dọc */
+.pet-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pet-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #636AE8;
+    margin-bottom: 10px;
+}
+
+/* Giảm kích thước của các input */
+.pet-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px; /* Giảm độ rộng của ô input */
+}
+
+.upload-btn {
+    background-color: #F2F2FD;
+    color: #636AE8;
+    border: 1px solid #636AE8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.upload-btn:hover {
+    background-color: #636AE8;
+    color: #F2F2FD;
+}
+
+.submit-btn {
+    background-color: #636AE8;
+    color: #F2F2FD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background-color: #F2F2FD;
+    color: #636AE8;
+}
+
+.search-area {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    color: #636AE8;
+    font-size: 18px;
+}
+
+.pet-list-title {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    color: #636AE8;
+}
+
+.pet-list {
+    display: flex;
+    gap: 10px;
+}
+
+.pet-category {
+    background-color: #F2F2FD;
+    color: #636AE8;
+    border: 1px solid #636AE8;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pet-category.active {
+    background-color: #636AE8;
+    color: #F2F2FD;
+}
