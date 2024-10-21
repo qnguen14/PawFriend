@@ -4,6 +4,7 @@
   align-items: center;
   padding: 20px;
   background-color: #a8d3d3;
+  width: 100%;
 }
 
 .logo img {
@@ -23,7 +24,7 @@ nav li {
   color: #fff;
 }
 
-.link{
-  text-decoration:none;
+.link {
+  text-decoration: none;
   color: #fff;
 }

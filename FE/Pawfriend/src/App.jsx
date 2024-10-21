@@ -1,9 +1,17 @@
 import React from "react";
-import Home from "./pages/Home";
-import Admin from "./pages/Admin";
-import Pet from "./pages/Pets";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import "./App.css";
+import AboutUs from "./pages/About us";
+import Admin from "./pages/Admin";
+import Donate from "./pages/Donate";
+import Home from "./pages/Home";
+import Pet from "./pages/Pets";
+import PetDetails from "./pages/Pets/Details";
 
 export default function App() {
   return (
@@ -13,10 +21,10 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/pets" element={<Pet />} />
+        <Route path="/pet/:id" element={<PetDetails />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/donate" element={<Donate />} />
       </Routes>
     </Router>
-  )
+  );
 }
-
-
-

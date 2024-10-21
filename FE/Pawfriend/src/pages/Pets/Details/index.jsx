@@ -1,15 +1,18 @@
-import react from 'react';
-import '../Pets.css';
-import Footer from "../../components/common/footer/Footer";
-import Header from "../../components/common/header/Header";
+import React from "react";
+import Header from "../../../components/common/header/Header";
+import "../Pets.css";
 
-const petDetails = () => {
+const PetDetails = () => {
+    const { petId } = useParams();
+
     return (
         <div>
-            <Header></Header>
-            <Footer></Footer>
+            <Header />
+            <h1>Details for {petId}</h1>
+            {/* Add more details here */}
+            <Footer />
         </div>
-);
-}
+    );
+};
 
-export default petDetails;
+export default PetDetails;

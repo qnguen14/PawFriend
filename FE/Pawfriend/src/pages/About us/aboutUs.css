@@ -1,0 +1,85 @@
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.who-we-are {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.who-we-are img {
+    flex: 2;
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.who-we-are-text {
+    flex: 2;
+    padding-left: 50px;
+    padding-top: 4.5rem;
+}
+
+.who-we-are-text h1 {
+    font-size: 3.3rem;
+    font-weight: lighter;
+    text-align: flex-start;
+}
+
+.who-we-are-text p {
+    font-size: 1.2rem;
+    text-align: flex-start;
+}
+
+.text-content {
+    padding-top: 4.5rem;
+    flex: 2;
+    padding-right: 50px;
+    justify-content: center;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: flex-start;
+}
+
+.text-content b {
+    color: #5AA1A2;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+}
+
+.about-us-content img {
+    flex: 2;
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.why-choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.why-choose b {
+    color: #5AA1A2;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 5px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

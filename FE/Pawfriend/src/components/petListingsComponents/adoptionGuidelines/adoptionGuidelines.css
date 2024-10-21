@@ -1,0 +1,68 @@
+.adoption-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+
+}
+
+.adoptionGuidelines {
+    padding-left: 100px;
+    flex: 2;
+    padding-right: 40px;
+}
+
+.adoptionGuidelines h1 {
+    font-size: 24px;
+    color: #e1a42d;
+    margin-bottom: 20px;
+}
+
+.adoptionGuidelines p {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #666666;
+}
+
+.conditions {
+    flex: 1;
+    /* Conditions box takes up less space */
+    display: flex;
+    justify-content: flex-start;
+    /* Aligns the conditions box */
+}
+
+.conditionsBox {
+    background-color: #f2f2f2;
+    /* Light gray background */
+    padding: 20px;
+    /* Padding inside the box */
+    border-radius: 8px;
+    /* Rounded corners */
+    width: 300px;
+    /* Set a fixed width */
+    margin-left: 10%;
+}
+
+.conditionsBox h1 {
+    font-size: 18px;
+    color: #888888;
+    /* Light gray title color */
+    margin-bottom: 15px;
+    text-align: center;
+    /* Center align the title */
+}
+
+.conditionsBox ul {
+    list-style-type: none;
+    /* Remove bullets from the list */
+    padding: 0;
+}
+
+.conditionsBox ul li {
+    margin-bottom: 10px;
+    /* Add space between list items */
+    color: #4b9ac3;
+    /* Blue color for the list items */
+    font-size: 14px;
+}

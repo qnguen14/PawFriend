@@ -1,0 +1,54 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.register-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6da7a1;
+    /* Adjust color as needed */
+    padding: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.register-content {
+    color: white;
+}
+
+.register-content h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.register-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    padding-right: 5rem;
+}
+
+.register-button {
+    background-color: #4f7c78;
+    /* Adjust color as needed */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #3e625e;
+    /* Adjust hover color as needed */
+    transform: scale(1.1);
+    /* Enlarge the button */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+}

@@ -12,107 +12,30 @@ body {
 .pets-page {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: Arial, sans-serif;
 }
-.image-container {
-  position: relative;
-  width: 100%;
-  height: 250px; /* Giữ nguyên chiều cao hoặc điều chỉnh nếu cần */
-  overflow: hidden;
-  background-color: #f0f0f0; /* Màu nền để lấp đầy khoảng trống */
-}
-
-.image-container img {
-  width: 100%;
-  height: auto; /* Để chiều cao tự động điều chỉnh */
-  max-height: 100%; /* Đảm bảo hình ảnh không vượt quá chiều cao của container */
-  object-fit: cover;
-  object-position: center 33%; /* Điều chỉnh vị trí dọc để hiển thị mặt động vật */
-  
-}
-
-.text-overlay {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  z-index: 10;
-}
-
-.text-overlay h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-.text-overlay p {
-  margin: 5px 0 0 0;
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: black;
-  padding: 5px 10px;
-  border-radius: 15px;
-  width: 120px;
-}
-
-.pet-contents {
- margin-left:40px;
-}
 
 
+/* .searchBar .rectangles:last-child {
+  margin-right: 0;
+  /* Loại bỏ margin bên phải của hình chữ nhật cuối cùng */
 
-.pet-contents h1 {
-  font-size: 1.8rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.pet-listings-header {
-  display: flex;
-  align-items: center;
-  margin-left: 40px; /* Giữ nguyên margin như các phần khác */
-  margin-top: 20px;
-  margin-bottom: 600px;
-}
-
-.pet-listings-header h1 {
-  font-size: 1.8rem;
-  color: #333;
-  margin: 0;
-  margin-right: 150px; /* Khoảng cách giữa tiêu đề và hình chữ nhật đầu tiên */
-}
-
-.rectangles {
-  display: flex;
-  align-items: center;
-  
-}
-
-.rectangle {
-  width: 200px; /* Điều chỉnh chiều rộng theo ý muốn */
-  height: 55px; /* Điều chỉnh chiều cao theo ý muốn */
-  background-color: #D9D9D9;
-  margin-right: 150px; /* Khoảng cách giữa các hình chữ nhật */
-}
-
-.rectangle:last-child {
-  margin-right: 0; /* Loại bỏ margin bên phải của hình chữ nhật cuối cùng */
-}
 /* Footer styles có thể được giữ nguyên */
-  /* Footer */
-  footer {
-    background-color: #B2D9D8;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto; /* Đẩy footer xuống cuối trang */
-  }
-  
-  footer p {
-    margin: 5px 0;
-  }
-  
-  footer img {
-    width: 50px;
-    height: auto;
-  }
-  
+/* Footer */
+footer {
+  background-color: #B2D9D8;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  /* Đẩy footer xuống cuối trang */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+}

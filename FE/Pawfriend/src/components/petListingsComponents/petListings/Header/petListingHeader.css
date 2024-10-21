@@ -1,0 +1,57 @@
+.pet-listings-header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.pet-listings-header h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    padding-right: 199px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.rectangles {
+    display: flex;
+    align-items: center;
+
+}
+
+.tag {
+    width: 170px;
+    height: 35px;
+    background-color: #87BEBF;
+    margin-right: 150px;
+    border-radius: 10px;
+    transition: width 0.2s ease, height 0.2s ease;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #f0f0f0;
+    align-items: center;
+    font-size: 17px;
+}
+
+.tag:hover {
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.searchBar {
+    border-color: #333;
+    width: 170px;
+    height: 35px;
+    display: flex;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.searchBar::placeholder {
+    margin-left: 20px;
+}
