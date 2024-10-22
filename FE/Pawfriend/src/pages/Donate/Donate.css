@@ -1,0 +1,160 @@
+.about-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+.about-us-section img {
+    width: max-content;
+    height: 500px;
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.donate-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-section p,
+.fund-usage-policy p {
+    font-size: 25px;
+    width: 700px;
+}
+
+.about-us-section h1 {
+    font-size: 50px;
+}
+
+.about-us-section h2 {
+    font-size: 35px;
+}
+
+.first-section-title,
+.title {
+    font-size: 50px;
+    background-color: #87BEBF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 100px;
+}
+
+.donate-now {
+    font-size: 20px;
+    background-color: #8FDE7A;
+    padding: 12px 24px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.donate-now:hover {
+    background-color: #80cb55;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.donate-now-button {
+    display: flex;
+    /* Ensure vertical alignment */
+    gap: 20px;
+    /* Space between button and payment methods */
+}
+
+.payment-methods {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    /* Ensure images are centered vertically */
+}
+
+.payment-methods img {
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.payment-methods img:hover {
+    transform: translateY(-5px);
+    /* Apply hover effect to each image */
+}
+
+.payment-methods:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.donate-pic:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.donate-now-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+.donate-now-section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.donate-now-section img:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.fund-usage-policy {
+    width: 700px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.join-us-section {
+    padding: 80px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-us-section div {
+    font-size: 50px;
+    background-color: #87BEBF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.join-us-section div:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.join-us-section p {
+    font-size: 25px;
+    width: 55%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
