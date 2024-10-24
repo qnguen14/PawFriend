@@ -1,9 +1,11 @@
 package fu.se.PawFund.controller;
 
 import fu.se.PawFund.dto.request.LoginRequest;
+import fu.se.PawFund.dto.request.RoleAssignmentRequest;
 import fu.se.PawFund.entity.User;
 import fu.se.PawFund.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -55,5 +57,12 @@ public class UserController {
     public String deleteUser(@PathVariable int id) {
         userService.deleteUser(id);
         return "User with ID: " + id + " has been deleted!";
+    }
+
+    @PreAuthorize("hasRole('ADMIN')")
+    @PutMapping("/setRole")
+    public String setRole(@RequestBody RoleAssignmentRequest roleRequest) {
+        userService.setRole(roleRequest.getUserId(), roleRequest.getRole());
+        return "Role has been updated!";
     }
 }

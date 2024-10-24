@@ -8,6 +8,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+import static org.springframework.security.config.Customizer.withDefaults;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -15,12 +17,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable()) // Vô hiệu hóa CSRF
+                .csrf(csrf -> csrf.disable())  // Disable CSRF for API requests
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/users/**").permitAll() // Cho phép tất cả các yêu cầu đến /users mà không cần xác thực
-                        .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll() // Cho phép truy cập Swagger mà không cần xác thực
-                        .anyRequest().authenticated() // Các yêu cầu khác cần xác thực
-                );
+                        .requestMatchers("/users/**").permitAll()  // Allow access to user-related requests
+                        .anyRequest().authenticated()  // Protect other endpoints
+                )
+                .formLogin(withDefaults());  // Enable form login instead of HTTP Basic
         return http.build();
     }
 

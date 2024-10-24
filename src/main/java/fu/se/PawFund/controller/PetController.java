@@ -3,6 +3,7 @@ package fu.se.PawFund.controller;
 import fu.se.PawFund.entity.Pet;
 import fu.se.PawFund.service.PetService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,6 +15,7 @@ public class PetController {
     @Autowired
     private PetService petService;
 
+    @PreAuthorize("hasRole('SHELTER')")
     @PostMapping
     public Pet addPet(@RequestBody Pet pet) {
         return petService.addPet(pet);

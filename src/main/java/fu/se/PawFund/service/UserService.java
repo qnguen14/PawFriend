@@ -49,7 +49,18 @@ public class UserService {
             throw new RuntimeException("User not found with email: " + request.getEmail());
         }
 
-        // So sánh mật khẩu đã mã hóa
+        // Log the encoded password and the raw password for debugging
+        System.out.println("Raw password: " + request.getPassword());
+        System.out.println("Encoded password in DB: " + user.get().getPassword());
+
+        // Compare passwords
         return passwordEncoder.matches(request.getPassword(), user.get().getPassword());
+    }
+
+
+    public void setRole(long userId, User.Role role) {
+        User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
+        user.setRole(role);
+        userRepository.save(user);
     }
 }

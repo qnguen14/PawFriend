@@ -13,9 +13,12 @@ public class User {
     private String email;
     private String phone;
     private String address;
-    private String role;
 
-    public User(int userID, String name, String password, String email, String phone, String address, String role) {
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
+    // Constructor
+    public User(long userID, String name, String password, String email, String phone, String address, Role role) {  // Changed 'String role' to 'Role role'
         this.userID = userID;
         this.name = name;
         this.password = password;
@@ -25,9 +28,11 @@ public class User {
         this.role = role;
     }
 
+    // Default constructor
     public User() {
     }
 
+    // Getters and setters
     public long getUserID() {
         return userID;
     }
@@ -76,11 +81,16 @@ public class User {
         this.address = address;
     }
 
-    public String getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(Role role) {
         this.role = role;
+    }
+
+    // Enum Role definition
+    public enum Role {
+        SHELTER, USER, ADMIN
     }
 }
